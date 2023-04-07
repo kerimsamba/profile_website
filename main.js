@@ -1,7 +1,6 @@
 import './style.css'
 
 import profilePic from '/public/profile_pic.jpeg'
-import demoVideo from '/public/demo_video.mp4'
 
 document.querySelector('#app').innerHTML = `
   <div class="content-container">
