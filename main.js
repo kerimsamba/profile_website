@@ -11,11 +11,12 @@ document.querySelector('#app').innerHTML = `
     <div class="right-column">
       <h1 class="artist-name">David McAllister</h1>
       <div class="video-wrapper">
-        <video controls>
-          <source src="${demoVideo}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+  <video controls>
+    <source src="https://dl.dropboxusercontent.com/s/fvpdwmo7u2r9vct/IMG_1137.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
       <p class="placeholder-text">Available for weddings, private functions and bar bookings.</p>
       <a id="contactButton" class="contact-button">Contact</a>
     </div>
