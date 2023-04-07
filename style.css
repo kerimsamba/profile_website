@@ -1,0 +1,116 @@
+body {
+  font-family: sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 33%;
+  object-fit: cover;
+  display: block;
+}
+
+.artist-name {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.placeholder-text {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add this style to create a small gap down the center in browser view */
+.left-column {
+  padding-right: 1%;
+}
+
+.right-column {
+  padding-left: 1%;
+}
+
+/* Media queries for tablet and mobile devices */
+@media screen and (max-width: 1024px) {
+  .hero-image {
+    max-height: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    max-height: 75%;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    flex: auto;
+    padding: 0; /* Reset padding for mobile view */
+  }
+
+  .artist-name {
+    font-size: 1.5em;
+  }
+}
